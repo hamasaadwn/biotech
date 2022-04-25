@@ -235,6 +235,8 @@
 }
 .prod-img {
     background-size: 315px;
+    /* zoom: 150%; */
+    object-fit: cover;
     background-image: url(http://api.biotech.cf/uploads/image-1648902717157.png);
     display: block;
     width: 304px;
@@ -244,6 +246,7 @@
     align-items: center;
     max-width: 304px;
     max-height: 304px;
+    /* overflow: scroll; */
 }
 
 /* @media screen and (max-height: 655px) {
