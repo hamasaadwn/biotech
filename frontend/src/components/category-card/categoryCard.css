@@ -233,6 +233,7 @@
     text-align: center;
     /* overflow-y: scroll; */
 }
+<<<<<<< HEAD
 .prod-img {
     background-size: 315px;
     /* zoom: 150%; */
@@ -248,6 +249,8 @@
     max-height: 304px;
     /* overflow: scroll; */
 }
+=======
+>>>>>>> 981affbe6fcc8391df00638303a5bb13e9e4610e
 
 /* @media screen and (max-height: 655px) {
     .prod-img {
