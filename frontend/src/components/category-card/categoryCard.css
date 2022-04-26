@@ -18,6 +18,9 @@
 .wrapper .containera {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .wrapper .containera .top {
     height: 80%;
@@ -29,14 +32,17 @@
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
+    flex: 1;
 }
 /* .wrapper .containera .top img {
   : no-repeat center center;
 } */
 .wrapper .containera .bottom {
     width: 100%;
-    height: 20%;
+    height: 80px;
     transition: transform 0.5s;
+    flex: 0;
+    flex-basis: 70px;
 }
 .wrapper .containera .bottom.clicked {
     transform: translateX(-50%);
@@ -51,24 +57,46 @@
 }
 .wrapper .containera .bottom .left {
     height: 100%;
-    width: 90%;
+    width: 100%;
     background: #f4f4f4;
     position: relative;
-    float: left;
+    /* float: left; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .wrapper .containera .bottom .left .details {
-    float: right;
-    width: calc(70% - 10px);
+    order: 2;
+    flex: 1;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-bottom: 5px; */
+}
+.wrapper .containera .bottom .left .details h1 {
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 20px;
+    font-weight: 300;
+}
+.wrapper .containera .bottom .left .details p {
+    font-weight: bold;
+    /* line-height: 20px; */
 }
 .wrapper .containera .bottom .left .buy {
     cursor: pointer;
-    float: left;
-    width: 100%;
-    width: calc(30% - 2px);
     height: 100%;
     background: #f1f1f1;
     transition: background 0.5s;
     border-left: solid thin rgba(0, 0, 0, 0.1);
+    order: 1;
+    flex-basis: 60px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 10px;
+
+    justify-content: center;
 }
 .wrapper .containera .bottom .left .buy i {
     font-size: 30px;
@@ -78,6 +106,7 @@
 }
 .wrapper .containera .bottom .left .buy:hover {
     background: #0aca0a;
+    border-top-right-radius: 10px;
     color: #fff;
 }
 .wrapper .containera .bottom .left .buy.bought {
