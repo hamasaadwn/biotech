@@ -1,20 +1,11 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import { CardContext } from '../../../context/CardContext';
-// import Backdrop from '@mui/material/Backdrop';
 import axios from 'axios';
 import CategoryCard from '../../../components/category-card/CategoryCard';
-// import Nav from '../../../components/navigation/Nav';
 import './brandview.css';
-// import { useTranslation } from 'react-i18next';
-
 import cookies from 'js-cookie';
-// import Modal from '../../../components/modal/Modal';
 import Modal from '@mui/material/Modal';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -22,21 +13,10 @@ import 'swiper/css/pagination';
 import Fade from '@mui/material/Fade';
 
 // import required modules
-import { FreeMode, Navigation } from 'swiper';
+import { FreeMode } from 'swiper';
 import Enav from '../../../components/navigation/Enav';
 
 import Box from '@mui/material/Box';
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-};
 
 function BrandView() {
     const params = useParams();
@@ -45,13 +25,10 @@ function BrandView() {
     const [category, setcategory] = useState('');
     const [buttons, setbuttons] = useState([]);
     const [search, setSearch] = useState('');
-    // const [bought, setBought] = useState(false);
     const [viewed, setViewed] = useState(false);
     const [clickedItem, setClickedItem] = useState();
     const currentLanguageCode = cookies.get('i18next') || 'kr';
-    const [bought, setBought] = useState(false);
     const [searchHist, setSearchHist] = useState('');
-    const { cart, setCart } = useContext(CardContext);
     const [slides, setslides] = useState(8);
 
     useEffect(() => {

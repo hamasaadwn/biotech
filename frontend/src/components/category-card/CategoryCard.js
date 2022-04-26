@@ -3,7 +3,7 @@ import './categoryCard.css';
 import { CardContext } from '../../context/CardContext';
 import { GrCart } from 'react-icons/gr';
 import cookies from 'js-cookie';
-import Modal from '../modal/Modal';
+
 
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import Cookies from 'js-cookie';

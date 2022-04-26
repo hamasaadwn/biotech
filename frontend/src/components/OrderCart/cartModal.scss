@@ -367,14 +367,10 @@ $modal-width: 85vw;
         font-size: 1.1rem;
         padding: 5px;
         color: #000;
-<<<<<<< HEAD
-        width: 90%;
-        height: 90%;
 
-=======
         // max-width: 65vw;
         border-color: #fff !important;
->>>>>>> 981affbe6fcc8391df00638303a5bb13e9e4610e
+
         // min-width: 650px;
 
         // @media screen and (max-width: 950px) {
@@ -382,15 +378,9 @@ $modal-width: 85vw;
         //     height: 90vh;
         // }
         .modal-content {
-<<<<<<< HEAD
-            padding: 20px 0px;
-            max-height: 100vh;
-            max-width: 100vw;
-=======
             padding: 15px;
             height: 80vh;
             width: 70vw;
->>>>>>> 981affbe6fcc8391df00638303a5bb13e9e4610e
             overflow-y: scroll;
             overflow-x: hidden;
             position: relative;

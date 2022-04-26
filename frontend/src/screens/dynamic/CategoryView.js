@@ -1,30 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 import CategoryCard from '../../components/category-card/CategoryCard';
-// import Nav from '../../../components/navigation/Nav';
 import './brands/brandview.css';
-// import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-
-// import cookies from 'js-cookie';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Box from '@mui/material/Box';
-
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-// import required modules
-import { FreeMode, Navigation } from 'swiper';
+import { FreeMode } from 'swiper';
 import Enav from '../../components/navigation/Enav';
 
 function CategoryView() {
