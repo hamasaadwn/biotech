@@ -8,6 +8,7 @@ import i18next from 'i18next';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Cookies from 'js-cookie';
+import PrevOrders from '../../components/previousOrders/PrevOrders';
 function Login() {
     const { t } = useTranslation();
 
@@ -78,6 +79,74 @@ function Login() {
         }
     }, []);
 
+
+    const forgotPass = async () => {
+        if (username === "") {
+            return alert("inter Your Email")
+        }
+        try {
+            const { data } = await axios.post(`${process.env.REACT_APP_MAIN_URL}users/reset-password`, {
+                email: username,
+
+            });
+            // console.log(data)
+            if (data) {
+                toast.error(
+                    i18next.language === 'ku'
+                        ? "پاسۆردەکەت بۆ ئیمەیڵەکەت نێردراوە"
+                        : "تم إرسال كلمة المرور الخاصة بك إلى حسابك",
+                    {
+                        position: 'top-right',
+                        autoClose: 2000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                    }
+                );
+                i18next.language === 'ku'
+                    ? seterrors("پاسۆردەکەت بۆ ئیمەیڵەکەت نێردراوە")
+                    : seterrors("تم إرسال كلمة المرور الخاصة بك إلى حسابك");
+            } else {
+                toast.error(
+                    i18next.language === 'ku'
+                        ? "checkyouremail"
+                        : "checkyouremail",
+                    {
+                        position: 'top-right',
+                        autoClose: 2000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                    }
+                );
+                i18next.language === 'ku'
+                    ? seterrors("checkyouremail")
+                    : seterrors("checkyouremail");
+            }
+
+        } catch (error) {
+            // console.log(error.response.data[0].meesageKR);
+            toast.error(
+                i18next.language === 'ku'
+                    ? error.response.data[0].meesageKR
+                    : error.response.data[0].messageAR,
+                {
+                    position: 'top-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                }
+            );
+            i18next.language === 'ku'
+                ? seterrors(error.response.data[0].messageKR)
+                : seterrors(error.response.data[0].messageAR);
+        }
+    };
+
     return (
         <>
             <div className="login-container">
@@ -118,12 +187,18 @@ function Login() {
                                     >
                                         {t('LoginB')}
                                     </button>
+                                    <p onClick={forgotPass}>{t('forgot')}</p>
                                 </div>
                             )}
                         </form>
                     </div>
                 </div>
             </div>
+            {LoginStatus ? (
+                <PrevOrders />
+            ) : (
+                null
+            )}
             <ToastContainer rtl={true} />
         </>
     );

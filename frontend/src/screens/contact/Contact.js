@@ -20,13 +20,14 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 700,
+    width: 600,
     bgcolor: '#ff9500',
-    border: '2px solid #ff9500',
+    border: '8px solid #ff9500',
     borderRadius: "20px",
     boxShadow: 14,
     color: "white",
     p: 4,
+
 };
 
 function Contact() {
@@ -42,7 +43,7 @@ function Contact() {
             <div className="contact-content2">
                 <div className="contact-card-parent" >
                     <div className="contact-card ">
-                        <a href="https://www.facebook.com/Biotech-iraq-100858022481350" target="_blank" className="contact-link">
+                        <a href="https://www.facebook.com/Biotech-iraq-100858022481350" target="_blank" rel="noreferrer" className="contact-link">
                             <div className="card-icon">
                                 <FaFacebookF />
                             </div>
@@ -53,7 +54,7 @@ function Contact() {
                         </a>
                     </div>
                     <div className="contact-card">
-                        <a href="https://www.instagram.com/biotech.iraq/?hl=en" target="_blank" className="contact-link">
+                        <a href="https://www.instagram.com/biotech.iraq/?hl=en" target="_blank" rel="noreferrer" className="contact-link">
                             <div className="card-icon">
                                 <FaInstagram />
                             </div>
@@ -79,13 +80,14 @@ function Contact() {
                 <div className="contact-card-parent " style={{ justifyContent: "center" }} >
                     <div className="contact-card ">
                         <div className="contact-link" onClick={handleOpen} style={{ cursor: "pointer" }}>
-                            <div className="card-icon">
-                                <AiOutlinePhone />
 
-                            </div>
 
                             <div className="card-number">
                                 <h2>{t('far3s')}</h2>
+                            </div>
+                            <div className="card-icon">
+                                <AiOutlinePhone />
+
                             </div>
                         </div>
                     </div>
@@ -107,76 +109,77 @@ function Contact() {
                         </Typography> */}
                         <Typography id="modal-modal-description" sx={{ mt: 2 }} >
 
-                            <div className="contact-card-parent " style={{ textAlign: "center" }} >
+                            <div className="contact-card-parent"  >
                                 <a href="tel:07501021920" className="contact-link">
+                                    <div className="card-icon">
+                                        <AiOutlinePhone />
+                                    </div>
                                     <div className="contact-card">
-                                        <h2>المبیعات</h2>
+                                        <h2>م.المبیعات</h2>
                                         <div className="card-number">
                                             <h2 dir='ltr'>0750 102 1920</h2>
                                         </div>
 
                                         <h2>د.هێرش</h2>
-                                        <div className="card-icon">
-                                            <AiOutlinePhone />
-                                        </div>
+
                                     </div>
                                 </a>
 
                                 <a href="tel:07508370072" className="contact-link">
-
+                                    <div className="card-icon">
+                                        <AiOutlinePhone />
+                                    </div>
                                     <div className="contact-card">
-                                        <h2>المبیعات</h2>
+                                        <h2>م.المبیعات</h2>
                                         <div className="card-number">
                                             <h2 dir='ltr'>0750 837 0072</h2>
                                         </div>
 
                                         <h2>د.بێستوون</h2>
-                                        <div className="card-icon">
-                                            <AiOutlinePhone />
-                                        </div>
+
                                     </div>
                                 </a>
 
                                 <a href="tel:07730117344" className="contact-link">
-
+                                    <div className="card-icon">
+                                        <AiOutlinePhone />
+                                    </div>
                                     <div className="contact-card">
-                                        <h2>المبیعات</h2>
+                                        <h2>م.المبیعات</h2>
                                         <div className="card-number">
                                             <h2 dir='ltr'>0773 011 7344</h2>
                                         </div>
 
                                         <h2>د.بەڵێن</h2>
-                                        <div className="card-icon">
-                                            <AiOutlinePhone />
-                                        </div>
+
                                     </div>
                                 </a>
                                 <a href="tel:07702223200" className="contact-link">
-
+                                    <div className="card-icon">
+                                        <AiOutlinePhone />
+                                    </div>
                                     <div className="contact-card">
-                                        <h2>مسؤول</h2>
+                                        <h2>م.تیم صیدلیات</h2>
                                         <div className="card-number">
                                             <h2 dir='ltr'>0770 222 3200</h2>
                                         </div>
 
                                         <h2>د.ئارام</h2>
-                                        <div className="card-icon">
-                                            <AiOutlinePhone />
-                                        </div>
+
                                     </div>
                                 </a>
                                 <a href="tel:07511161061" className="contact-link">
-
+                                    <div className="card-icon">
+                                        <AiOutlinePhone />
+                                    </div>
                                     <div className="contact-card">
-                                        <h2>التحصیل</h2>
+                                        <h2>م.التحصیل</h2>
                                         <div className="card-number">
                                             <h2 dir='ltr'>0751 116 1061</h2>
                                         </div>
 
                                         <h2>فلاح</h2>
-                                        <div className="card-icon">
-                                            <AiOutlinePhone />
-                                        </div>
+
                                     </div>
                                 </a>
                             </div>

@@ -1,0 +1,16 @@
+.account {
+}
+.order-container {
+    width: 85%;
+    margin: 0 auto;
+    /* border: black solid 3px; */
+}
+
+.flexDown {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hoveredBtn:hover {
+    background-color: rgb(197, 197, 197) !important;
+}
