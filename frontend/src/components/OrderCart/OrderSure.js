@@ -113,7 +113,7 @@ function OrderSure(props) {
                 <ul className="shopping-cart-items">
                     {cart.map((e, index) => {
                         return <li className="clearfix " >
-                            <img src={`http://api.biotech.cf${e.image}`} alt="item1" />
+                            <img src={`https://biotechiraq.com${e.image}`} alt="item1" />
                             <span className="item-name">{currentLanguageCode === "ar" ? e.nameAR : e.nameKR}</span>
                             {/* <span className="item-price">$849.99</span> */}
                             <span className="item-quantity">{e.quantity} : {t("quantity")} </span>

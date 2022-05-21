@@ -60,7 +60,7 @@ function Enav({ setSearch, search, searchHist }) {
                         <div className="nav-logo">
                             <a href="/">
                                 <img
-                                    src="http://api.biotech.cf/uploads/image-1649228283079.png"
+                                    src="https://biotechiraq.com//uploads/image-1649228283079.png"
                                     alt="logo"
                                 />
                             </a>

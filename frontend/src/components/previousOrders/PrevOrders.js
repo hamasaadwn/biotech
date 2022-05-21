@@ -118,7 +118,7 @@ function PrevOrders() {
                                                 <CardMedia
                                                     component="img"
                                                     sx={{ width: 151 }}
-                                                    image={`http://api.biotech.cf${e.product.image}`}
+                                                    image={`https://biotechiraq.com${e.product.image}`}
                                                     alt="Products"
                                                 />
                                             </Card>

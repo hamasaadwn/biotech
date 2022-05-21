@@ -173,7 +173,7 @@ function OrderCart({ openCart, setOpenCart }) {
                                                                     </div>
                                                                 </div>
                                                                 <img
-                                                                    src={`http://api.biotech.cf${e.image}`}
+                                                                    src={`https://biotechiraq.com/${e.image}`}
                                                                     alt="item1"
                                                                     className="cart-item-image"
                                                                     onClick={(e) =>
@@ -200,9 +200,8 @@ function OrderCart({ openCart, setOpenCart }) {
                                                                 <span className="item-price">
                                                                     {isNaN(e.quantity)
                                                                         ? 'price'
-                                                                        : `$ ${
-                                                                              e.quantity * e.price
-                                                                          }`}
+                                                                        : `$ ${e.quantity * e.price
+                                                                        }`}
                                                                 </span>
                                                             </li>
                                                         );
@@ -265,7 +264,7 @@ function OrderCart({ openCart, setOpenCart }) {
                                         <div className="cart-item" key={index}>
                                             <div className="cart-img">
                                                 <img
-                                                    src={`http://api.biotech.cf${item.image}`}
+                                                    src={`https://biotechiraq.com/${item.image}`}
                                                     height="100px"
                                                     width="100px"
                                                     alt="item1"
