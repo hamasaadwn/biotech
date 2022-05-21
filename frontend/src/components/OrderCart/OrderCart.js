@@ -173,7 +173,7 @@ function OrderCart({ openCart, setOpenCart }) {
                                                                     </div>
                                                                 </div>
                                                                 <img
-                                                                    src={`https://biotechiraq.com/${e.image}`}
+                                                                    src={`https://biotechiraq.com${e.image}`}
                                                                     alt="item1"
                                                                     className="cart-item-image"
                                                                     onClick={(e) =>
@@ -264,7 +264,7 @@ function OrderCart({ openCart, setOpenCart }) {
                                         <div className="cart-item" key={index}>
                                             <div className="cart-img">
                                                 <img
-                                                    src={`https://biotechiraq.com/${item.image}`}
+                                                    src={`https://biotechiraq.com${item.image}`}
                                                     height="100px"
                                                     width="100px"
                                                     alt="item1"

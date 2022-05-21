@@ -70,7 +70,7 @@ function CategoryCard(props) {
                         className="top"
                         onClick={() => props.addToViewed(props.cart._id)}
                         style={{
-                            backgroundImage: `url(https://biotechiraq.com/${props.cart.image})`,
+                            backgroundImage: `url(https://biotechiraq.com${props.cart.image})`,
                             cursor: 'pointer',
                         }}
                     ></div>

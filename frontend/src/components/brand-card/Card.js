@@ -7,7 +7,7 @@ function Card(props) {
             <div className="face face1">
                 <div className="content">
                     <div className="icon" style={{ backgroundImage: `url(${props.logo})` }}>
-                        <img loading='lazy' src={`https://biotechiraq.com/${props.logo}`} />
+                        <img loading='lazy' src={`https://biotechiraq.com${props.logo}`} />
 
                     </div>
                 </div>
