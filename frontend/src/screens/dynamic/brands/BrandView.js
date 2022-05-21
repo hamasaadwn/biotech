@@ -224,7 +224,7 @@ function BrandView() {
                                     <p>{clickedItem?.descriptionKR}</p>
                                     <div className="top prod-img">
                                         <img
-                                            src={`https://biotechiraq.com${clickedItem?.image}`}
+                                            src={`https://api.biotechiraq.com${clickedItem?.image}`}
                                             alt=""
                                         />
                                     </div>
