@@ -11,7 +11,6 @@ import Cookies from 'js-cookie';
 import PrevOrders from '../../components/previousOrders/PrevOrders';
 function Login() {
     const { t } = useTranslation();
-
     const [username, setusername] = useState('');
     const [password, setpassword] = useState('');
     const [errors, seterrors] = useState(t('Login'));

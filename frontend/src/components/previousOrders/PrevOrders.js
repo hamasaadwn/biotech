@@ -15,6 +15,7 @@ import axios from 'axios'
 import CardMedia from '@mui/material/CardMedia';
 
 const style = {
+
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -56,6 +57,7 @@ function PrevOrders() {
         <>
             <div className="account">
                 <h1 className='titleHead'>{t('porders')}</h1>
+                <h1 className='titleHead'> {orders.filter(e => e.userId === userID).reduce((a, v) => a = a + v.total, 0) / 100} {t('stars')} </h1>
                 <div className='order-container' dir='rtl'>
                     {orders.slice(0).reverse().filter(e => e.userId === userID).map(e => (
                         <>
