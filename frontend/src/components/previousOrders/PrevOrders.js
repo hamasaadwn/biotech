@@ -11,9 +11,7 @@ import Backdrop from '@mui/material/Backdrop';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import axios from 'axios'
-
 import CardMedia from '@mui/material/CardMedia';
-
 const style = {
 
     position: 'absolute',
