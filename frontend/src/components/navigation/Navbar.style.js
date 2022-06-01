@@ -159,7 +159,10 @@ export const Navbar = styled.div`
         position: relative;
         height: 60px;
         width: 100%;
+.nav-logo{
+ width: 30%;
 
+}
         .hamburger {
             position: absolute;
             cursor: pointer;

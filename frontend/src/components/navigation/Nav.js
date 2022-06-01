@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // import "./nav.css"
 import aa from '../../images/logo.png';
-import { GrLanguage } from 'react-icons/gr';
+// import { GrLanguage } from 'react-icons/gr';
 import i18next from 'i18next';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -10,7 +10,7 @@ import { CgProfile } from 'react-icons/cg';
 // import OrderCart from '../OrderCart/OrderCart';
 import { Navbar as Navs } from './Navbar.style';
 import OrderCart from '../OrderCart/OrderCart';
-import Cookies from 'js-cookie';
+// import Cookies from 'js-cookie';
 function Nav() {
     // const usePathname = () => {
     //     const location = useLocation();

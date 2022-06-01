@@ -5,9 +5,7 @@ import shape from "../../images/header.png"
 import back from "../../images/shapehead.png"
 import "./Header.css"
 
-
 function Header() {
-
 
 
     return (

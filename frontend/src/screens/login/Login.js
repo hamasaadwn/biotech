@@ -36,22 +36,13 @@ function Login() {
             }
         } catch (error) {
             // console.log(error.response.data[0].meesageKR);
-            toast.error(
+            alert(error.response.data[0].meesageKR);
+            seterrors(
                 i18next.language === 'ku'
-                    ? error.response.data[0].meesageKR
-                    : error.response.data[0].messageAR,
-                {
-                    position: 'top-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                }
+                    ? error.response.data[0].messageKR
+                    : error.response.data[0].messageAr
             );
-            i18next.language === 'ku'
-                ? seterrors(error.response.data[0].messageKR)
-                : seterrors(error.response.data[0].messageAR);
+
         }
     };
     const logout = () => {
