@@ -100,16 +100,16 @@ function PrevOrders() {
                                 {orders.filter(e => e._id === ID).map(e => (
                                     <>
                                         {e.products.map(e => {
-                                            return <Card sx={{ display: 'flex', justifyContent: "space-between", margin: "5px 0", width: "100%" }}>
+                                            return <Card sx={{ display: 'flex', justifyContent: "space-between", margin: "5px 0", width: "100%", height: "20vh" }}>
                                                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                                     <CardContent sx={{ flex: '1 0 auto' }}>
-                                                        <Typography component="div" variant="h5">
+                                                        <Typography component="div" variant="h5" style={{ fontSize: "3vmin" }}>
                                                             {e.product.nameKR}
                                                         </Typography>
-                                                        <Typography color="text.secondary" component="div" variant="h5">
+                                                        <Typography color="text.secondary" component="div" variant="h5" style={{ fontSize: "4vmin" }}>
                                                             {e.quantity} {t("quantity")}
                                                         </Typography>
-                                                        <Typography color="text.secondary" component="div" variant="h5">
+                                                        <Typography color="text.secondary" component="div" variant="h5" style={{ fontSize: "4vmin" }}>
                                                             ${e.total} {t('total')}
                                                         </Typography>
                                                     </CardContent>
