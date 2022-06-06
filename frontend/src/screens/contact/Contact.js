@@ -190,7 +190,7 @@ function Contact() {
             </div>
             <div className="created-by">
                 Developed and designed by{' '}
-                <a href="/#" className="created-by-link">
+                <a href="https://www.onlineguard.krd/" className="created-by-link">
                     Online Guard
                 </a>
                 ©2022.
