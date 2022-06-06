@@ -193,7 +193,7 @@ function Contact() {
                 <a href="/#" className="created-by-link">
                     Online Guard
                 </a>
-                ©2022. all rights reserved
+                ©2022.
             </div>
         </div>
     );
