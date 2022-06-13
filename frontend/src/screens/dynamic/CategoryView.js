@@ -192,7 +192,7 @@ function CategoryView() {
                 </div>
             </div>
             <div className="category-cards">
-                {filteredProducts?.map((e) => (
+                {filteredProducts?.filter(e => e.state === "active").map((e) => (
                     // <Link to={/brands/${e._id}}>
                     <CategoryCard cart={e} notify={notify} addToViewed={addToViewed} />
                     // </Link>
