@@ -25,7 +25,13 @@ function CategoryCard(props) {
             setToken(session);
         }
     }, [token]);
-    const addToCart = () => {
+    const addToCart = (state) => {
+
+        // if (state == "inactive") {
+        //     props.notify('This Item is not available');
+        //     return;
+        // }
+
         if (!token) {
             props.notify('warning', 'Please log in to buy this item!');
             return;
@@ -81,15 +87,14 @@ function CategoryCard(props) {
                                 <p>${props.cart.price}</p>
                             </div>
                             {/* <button style={{ width: "200px" }} value="add to card" onClick={() => { localStorage.setItem("cart", JSON.stringify([...cart, props.cart])); setCart([...cart, props.cart]) }} /> */}
-                            <div className={`buy ${classes}`} onClick={addToCart}>
+                            <div className={`buy ${classes}`} onClick={props.cart.state === "active" ? addToCart : () => props.notify('warning', 'Item Not Available (Out Of Stock)')} style={props.cart.state === "active" ? {} : { background: "grey" }}>
                                 {/* className={`buy ${bought ? 'bought' : ''}`} */}
                                 <GrCart style={{ zoom: '150%' }} />
                             </div>
                         </div>
-
                     </div>
                 </div>
-                <div className="inside">
+                <div className="inside" >
                     <div className="icon">
                         <AiOutlineInfoCircle style={{ zoom: '200%' }} />
                     </div>
