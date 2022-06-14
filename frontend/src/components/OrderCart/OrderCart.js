@@ -80,6 +80,12 @@ function OrderCart({ openCart, setOpenCart }) {
         setData({ ...data, products: eee, note: note });
     };
     const checkoutHandler = () => {
+
+        if (cart.length === 0) {
+            alert('Your cart is empty');
+            return
+        }
+
         arr();
         setsure(true);
         setOpenCart(!openCart);
