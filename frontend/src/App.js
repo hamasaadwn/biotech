@@ -20,10 +20,7 @@ function App() {
   // useEffect(() => {
   //   setCart(localStorage.getItem('cart'))
   //   // localStorage.setItem("cart", JSON.stringify(cart))
-
-
   // }, [])
-
 
   return (
     <>
