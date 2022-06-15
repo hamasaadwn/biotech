@@ -9,18 +9,9 @@ import Cart from "./components/OrderCart/Cart";
 import 'react-toastify/dist/ReactToastify.css';
 import CategoryView from "./screens/dynamic/CategoryView";
 
-
-
 function App() {
 
-
-
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) || [])
-
-  // useEffect(() => {
-  //   setCart(localStorage.getItem('cart'))
-  //   // localStorage.setItem("cart", JSON.stringify(cart))
-  // }, [])
 
   return (
     <>
