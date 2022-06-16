@@ -166,7 +166,7 @@
         float: left;
         /* margin-right: 12px; */
         /* width: 35%; */
-        height: 15vh;
+        height: 13vh;
     }
     .shopping-cart .shopping-cart-items .item-name {
         display: block;
@@ -174,8 +174,8 @@
         font-size: 11px !important;
     }
 }
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     .shopping-cart .shopping-cart-items img {
         display: none;
     }
-}
+} */
